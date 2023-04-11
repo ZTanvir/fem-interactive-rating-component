@@ -143,6 +143,7 @@ body {
 .feedback__form-all-inputs label {
   position: relative;
 }
+
 .feedback__form-all-inputs span {
   position: absolute;
   bottom: 50%;
