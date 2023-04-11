@@ -81,7 +81,6 @@ h6 {
   --fw-regular: 400;
   --fw-bold: 700;
 }
-
 input[type="radio"] {
   appearance: none;
 }
@@ -90,19 +89,55 @@ input[type="radio"] {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid gray;
   vertical-align: -2px;
   outline: none;
+  background-color: var(--cc-mg);
 }
 
 input[type="radio"]:hover {
-  background-color: aqua;
+  background-color: var(--cc-orange);
 }
 
 input[type="radio"]:checked::before {
   background-color: red;
   transform: translate(3px, 3px) scale(1);
   transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2);
+}
+
+body {
+  display: grid;
+  background-color: var(--cc-vdb);
+  place-items: center;
+  font-family: var(--ff-family, sans-serif);
+}
+.feedback {
+  max-width: 400px;
+  background-color: var(--cc-db);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 30px;
+}
+.feedback__img-bg {
+  width: 40px;
+  height: 40px;
+  background-color: var(--cc-vdb);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback__title {
+  color: var(--cc-white);
+}
+.feedback__content {
+  color: var(--cc-white);
+  opacity: 0.5;
+}
+
+.feedback__form-all-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .feedback__form-all-inputs label {
