@@ -159,8 +159,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 0px;
-  border-radius: 15px;
+  padding: 9px 0px;
+  border-radius: 25px;
   border: none;
   text-transform: uppercase;
   background-color: var(--cc-orange);
