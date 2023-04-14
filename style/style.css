@@ -74,7 +74,8 @@ h6 {
   --cc-white: hsl(0, 0%, 100%);
   --cc-lg: hsl(217, 12%, 63%);
   --cc-mg: hsl(216, 12%, 54%);
-  --cc-db: hsl(213, 19%, 18%);
+  --cc-db: #212832;
+  --cc-ldb: #222d38;
   --cc-vdb: hsl(216, 12%, 8%);
 
   --ff-family: "Overpass";
@@ -86,22 +87,20 @@ input[type="radio"] {
 }
 
 input[type="radio"] {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   vertical-align: -2px;
   outline: none;
-  background-color: var(--cc-mg);
+  background-color: var(--cc-ldb);
 }
 
 input[type="radio"]:hover {
   background-color: var(--cc-orange);
+  cursor: pointer;
 }
-
-input[type="radio"]:checked::before {
-  background-color: red;
-  transform: translate(3px, 3px) scale(1);
-  transition: all 0.3s cubic-bezier(0.25, 0.25, 0.56, 2);
+input[type="radio"]:checked {
+  background-color: var(--cc-mg);
 }
 
 body {
@@ -116,11 +115,13 @@ body {
   border-radius: 30px;
   overflow: hidden;
   padding: 30px;
+  display: grid;
+  gap: 20px;
 }
 .feedback__img-bg {
   width: 40px;
   height: 40px;
-  background-color: var(--cc-vdb);
+  background-color: var(--cc-ldb);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -133,7 +134,10 @@ body {
   color: var(--cc-white);
   opacity: 0.5;
 }
-
+#feedback__form {
+  display: grid;
+  gap: 10px;
+}
 .feedback__form-all-inputs {
   display: flex;
   flex-direction: row;
@@ -146,6 +150,8 @@ body {
 
 .feedback__form-all-inputs span {
   position: absolute;
-  bottom: 50%;
-  left: 36%;
+  bottom: 66%;
+  left: 41%;
+  opacity: 0.6;
+  color: var(--cc-white);
 }
