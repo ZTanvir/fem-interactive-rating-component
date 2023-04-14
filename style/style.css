@@ -163,11 +163,40 @@ body {
   border-radius: 25px;
   border: none;
   text-transform: uppercase;
+}
+.btn-orange {
   background-color: var(--cc-orange);
   color: var(--cc-white);
 }
-.feedback__form-submit-btn:hover {
+.btn-orange:hover {
   cursor: pointer;
   color: var(--cc-orange);
   background-color: var(--cc-white);
+}
+/* tank you section */
+.tank-you {
+  max-width: 400px;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: var(--cc-db);
+  border-radius: 30px;
+}
+.tank-you__rating-text {
+  background-color: var(--cc-ldb);
+  border-radius: 15px;
+  padding: 3px 15px;
+  font-size: 14px;
+  color: var(--cc-orange);
+  font-weight: var(--fw-regular);
+}
+.tank-you__title {
+  color: var(--cc-white);
+  font-weight: var(--fw-bold);
+}
+.tank-you__text {
+  color: var(--cc-white);
+  opacity: 0.5;
+  text-align: center;
 }
