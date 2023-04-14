@@ -173,8 +173,8 @@ body {
   color: var(--cc-orange);
   background-color: var(--cc-white);
 }
-/* tank you section */
-.tank-you {
+/* thank you section */
+.thank-you {
   max-width: 400px;
   display: grid;
   justify-items: center;
@@ -183,7 +183,7 @@ body {
   background-color: var(--cc-db);
   border-radius: 30px;
 }
-.tank-you__rating-text {
+.thank-you__rating-text {
   background-color: var(--cc-ldb);
   border-radius: 15px;
   padding: 3px 15px;
@@ -191,11 +191,11 @@ body {
   color: var(--cc-orange);
   font-weight: var(--fw-regular);
 }
-.tank-you__title {
+.thank-you__title {
   color: var(--cc-white);
   font-weight: var(--fw-bold);
 }
-.tank-you__text {
+.thank-you__text {
   color: var(--cc-white);
   opacity: 0.5;
   text-align: center;
