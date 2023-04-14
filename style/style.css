@@ -200,3 +200,6 @@ body {
   opacity: 0.5;
   text-align: center;
 }
+.hide-section {
+  display: none;
+}
