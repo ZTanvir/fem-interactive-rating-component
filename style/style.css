@@ -119,8 +119,8 @@ body {
   gap: 20px;
 }
 .feedback__img-bg {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: var(--cc-ldb);
   border-radius: 50%;
   display: flex;
@@ -136,7 +136,7 @@ body {
 }
 #feedback__form {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .feedback__form-all-inputs {
   display: flex;
@@ -154,4 +154,20 @@ body {
   left: 41%;
   opacity: 0.6;
   color: var(--cc-white);
+}
+.feedback__form-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--cc-orange);
+  color: var(--cc-white);
+}
+.feedback__form-submit-btn:hover {
+  cursor: pointer;
+  color: var(--cc-orange);
+  background-color: var(--cc-white);
 }
